@@ -9,6 +9,6 @@ public class DemoHealthIndicator implements HealthIndicator {
 
     @Override
     public Health health() {
-        return Health.down().withDetail("reason", "testing").build();
+        return Health.up().withDetail("reason", "testing").build();
     }
 }
